@@ -1,0 +1,14 @@
+Я шаблон с записями {{ count }}
+
+{% for key in obj %}
+<div>
+    <h4>
+        {% filter upper | lower %}
+        {{ key.name }}
+        {% endfilter %}
+    </h4>
+    <p>
+        {{ key.id }}
+    </p>
+</div>
+{% endfor %}
